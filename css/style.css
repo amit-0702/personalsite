@@ -1,0 +1,161 @@
+body{
+  margin: 0 ;
+  background-color: #171717;
+}
+
+.avatar_img{
+  display: inline;
+  opacity: 0.8;
+}
+
+#my_avatar{
+  margin-left: 12em;
+  margin-top: 3em;
+  max-height: 13em;
+  z-index: -2;
+}
+
+::selection{
+  background-color: #1F441E ;
+  color: #FDFAF6;
+}
+
+.nav{
+  background-color: inherit;
+  font-family:'Maven Pro', sans-serif;
+  padding: 1em;
+  position: sticky;
+  top: 0em;
+  box-shadow: 0px 0px 7px 0px;    /* down shadow of nav class box */
+  z-index: 2;
+}
+
+#menu {
+  display: none;
+}
+
+.extended{
+  display: none;
+}
+
+/* MY Name on hover */
+.nav #my_name a:hover{
+  text-decoration: none;
+  color: #C84B31;
+  /* cursor: not-allowed; */
+}
+
+/* All links in the nav class */
+.nav a{
+  text-decoration: none;
+  color: #C84B31;
+  letter-spacing: 2px;
+}
+
+/* my name */
+.nav a.name{
+  font-family: 'Nanum Brush Script', cursive;
+  /* font-family:'Maven Pro', sans-serif; */
+  font-size: 2.1em;
+}
+/* all links on hover in nav class */
+.nav a:hover{
+   color: #346751;
+}
+
+/* right links in nav class */
+.right-nav{
+  float: right;
+  padding-left: 2em;
+  padding-top: 0.8em;
+}
+
+/* paragraph content */
+.content{
+  margin-top: 1em;
+}
+
+/* greeting part */
+#greeting{
+  font-size: 2em;
+  float: left;
+}
+
+/* about part */
+.about{
+  padding-top: 1em;
+  float: left;
+  line-height: 2;
+
+  margin-bottom: 3em;
+}
+
+/* greeting + about */
+.full_about{
+  font-family: 'Montserrat', sans-serif;
+  color: #E8F0F2;
+  margin-top: 4em;
+  padding-right: 3em;
+  padding-left: 1em;
+  float: right;
+  display: inline-block;
+  max-width: 35em;
+  letter-spacing: 2px;
+  font-weight: 100;
+}
+
+/* link to kiit's website */
+.about a{
+  text-decoration: none;
+  color: #EBA83A;
+  font-weight: bold;
+}
+/* kiit's link on hover */
+.about a:hover{
+  opacity: 0.6;
+}
+
+.social a{
+  margin-right: 4em;
+}
+
+.social a img{
+  width: 2.3em;
+  padding: 4px;
+  background-color: white;
+  border-radius: 6px;
+}
+.social a img:hover{
+  position: relative;
+  bottom: 3px;
+}
+
+
+@media only screen and (max-width : 600px) {
+  .right-nav{
+    display:none;
+  }
+  #menu{
+    display: inline;
+    width: 2.7em;
+    position: absolute;
+    top: 0.8em;
+    right: 3em;
+  }
+  .nav img:hover{
+    cursor: pointer;
+  }
+
+  #my_avatar{
+    margin-left:10em;
+  }
+  .social a{
+    margin:auto 1em auto 1em;
+  }
+
+  .extended{
+    display:absolute;
+
+  }
+
+}
